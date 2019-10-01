@@ -1,0 +1,19 @@
+def factorial(num = 0)
+  return "Can not calculate factorial of a negative number" if num < 0
+
+  if num <= 1
+    1
+  else
+    num * factorial(num - 1)
+  end
+end
+
+def number_or_nil(string)
+  Integer(string || '')
+rescue ArgumentError
+  nil
+end
+
+puts "Iveskite sveikaji skaiciu: "
+skaicius = gets.chomp
+factorial(number_or_nil(skaicius))
