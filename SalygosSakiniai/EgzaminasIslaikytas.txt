@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int ivertinimas;
+    cout << "Iveskite ivertinima" << endl;
+    cin >> ivertinimas;
+
+    if(ivertinimas >= 5)
+    {
+        cout << "Egzaminas islaikytas" << endl;
+    }
+    else
+        cout << "Egzaminas neislaikytas" << endl;
+        
+    return 0;
+}

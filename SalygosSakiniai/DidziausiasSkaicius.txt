@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int pirmas,antras,trecias;
+    cout << "Iveskite tris skaicius" << endl;
+    cin >> pirmas >> antras >> trecias;
+    
+    {
+    if (pirmas >= antras && pirmas >= trecias)
+    {
+        cout << "Didziausias skaicius" << " " << pirmas << endl;
+    }
+    else if (antras >= trecias && antras >= pirmas)
+
+        cout << "Didziausias skaicius" << " " << antras << endl;
+
+    else if (trecias >= pirmas && trecias >= antras)
+
+        cout << "Didziausias skaicius" << " " << trecias << endl;
+    }
+
+    return 0;
+}
